@@ -8,61 +8,8 @@ from cs231n.coco_utils import sample_coco_minibatch
 
 
 class CaptioningSolver(object):
-    """
-    A CaptioningSolver encapsulates all the logic necessary for training
-    image captioning models. The CaptioningSolver performs stochastic gradient
-    descent using different update rules defined in optim.py.
-
-    The solver accepts both training and validataion data and labels so it can
-    periodically check classification accuracy on both training and validation
-    data to watch out for overfitting.
-
-    To train a model, you will first construct a CaptioningSolver instance,
-    passing the model, dataset, and various options (learning rate, batch size,
-    etc) to the constructor. You will then call the train() method to run the
-    optimization procedure and train the model.
-
-    After the train() method returns, model.params will contain the parameters
-    that performed best on the validation set over the course of training.
-    In addition, the instance variable solver.loss_history will contain a list
-    of all losses encountered during training and the instance variables
-    solver.train_acc_history and solver.val_acc_history will be lists containing
-    the accuracies of the model on the training and validation set at each epoch.
-
-    Example usage might look something like this:
-
-    data = load_coco_data()
-    model = MyAwesomeModel(hidden_dim=100)
-    solver = CaptioningSolver(model, data,
-                    update_rule='sgd',
-                    optim_config={
-                      'learning_rate': 1e-3,
-                    },
-                    lr_decay=0.95,
-                    num_epochs=10, batch_size=100,
-                    print_every=100)
-    solver.train()
-
-
-    A CaptioningSolver works on a model object that must conform to the following
-    API:
-
-    - model.params must be a dictionary mapping string parameter names to numpy
-      arrays containing parameter values.
-
-    - model.loss(features, captions) must be a function that computes
-      training-time loss and gradients, with the following inputs and outputs:
-
-      Inputs:
-      - features: Array giving a minibatch of features for images, of shape (N, D
-      - captions: Array of captions for those images, of shape (N, T) where
-        each element is in the range (0, V].
-
-      Returns:
-      - loss: Scalar giving the loss
-      - grads: Dictionary with the same keys as self.params mapping parameter
-        names to gradients of the loss with respect to those parameters.
-    """
+   
+ 
 
     def __init__(self, model, data, **kwargs):
         """
