@@ -70,12 +70,12 @@
 По основным параметрам есть открытые источники, можно работать.
 Основные источники (по океану):
 * https://earthdata.nasa.gov/discipline/ocean
-http://marine.copernicus.eu
-http://www.remss.com
-https://ladsweb.nascom.nasa.gov/search
-http://www.smos-sos.org
+* http://marine.copernicus.eu
+* http://www.remss.com
+* https://ladsweb.nascom.nasa.gov/search
+* http://www.smos-sos.org
 Ветер (пример)
-ftp://ftp.ifremer.fr/ifremer/cersat/products/gridded/MWF/L3/ASCAT/Daily/Netcdf/2016
+* ftp://ftp.ifremer.fr/ifremer/cersat/products/gridded/MWF/L3/ASCAT/Daily/Netcdf/2016
 Обычно можно скачать по ftp/http файлы по заказу на день/период, формат будет NetCDF,HDF скорее всего.
 Остальные параметры надо поискать еще будет.
 Надо еще посмотреть на ограничения на скачивание, сколько можно за раз взять.
