@@ -67,14 +67,14 @@
 Надо будет определять границы промысловых зон, они международно согласованы.
 Это где то здесь есть:
 * http://www.fao.org/fishery/area/search/en 
-По основным параметрам есть открытые источники, можно работать.
+* По основным параметрам есть открытые источники, можно работать.
 Основные источники (по океану):
 * https://earthdata.nasa.gov/discipline/ocean
 * http://marine.copernicus.eu
 * http://www.remss.com
 * https://ladsweb.nascom.nasa.gov/search
 * http://www.smos-sos.org
-Ветер (пример)
+* Ветер (пример)
 * ftp://ftp.ifremer.fr/ifremer/cersat/products/gridded/MWF/L3/ASCAT/Daily/Netcdf/2016
 Обычно можно скачать по ftp/http файлы по заказу на день/период, формат будет NetCDF,HDF скорее всего.
 Остальные параметры надо поискать еще будет.
